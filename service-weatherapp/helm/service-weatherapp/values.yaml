@@ -1,2 +1,2 @@
-image: docker.io/simonesan/weatherapp:latest
+image: docker.io/simonesan/hey-service:latest
 replicaCount: 1
