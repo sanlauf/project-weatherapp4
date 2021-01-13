@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  creationTimestamp: null
+  name: service-weatherapp
+spec:
+  gateways:
+  - public-gateway.istio-system
+  - mesh
+  hosts:
+  - service-weatherapp.project-weatherapp3-staging.35.203.149.57.xip.io
+  - service-weatherapp
+  http:
+  - route:
+    - destination:
+        host: service-weatherapp-canary.project-weatherapp3-staging.svc.cluster.local
+    - destination:
+        host: service-weatherapp-primary.project-weatherapp3-staging.svc.cluster.local
+      weight: 100
