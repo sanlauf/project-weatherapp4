@@ -1,0 +1,4 @@
+apiVersion: v2
+description: A Helm Chart for project project-weatherapp3-umbrella
+name: project-weatherapp3-umbrella
+version: 0.1.0
