@@ -1,2 +1,4 @@
 service-weatherapp:
   enabled: false
+service-weatherapp-generated:
+  enabled: false
