@@ -1,4 +1,0 @@
-apiVersion: v1
-description: A Helm chart for service service-weatherapp
-name: service-weatherapp
-version: latest

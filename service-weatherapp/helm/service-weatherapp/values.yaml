@@ -1,2 +1,0 @@
-image: docker.io/simonesan/weatherapp:latest
-replicaCount: 1
